@@ -1,3 +1,5 @@
+#Purpose of code listed in description of this commit
+
 import random as r #random rewards for a limited number of steps regardless of agent's actions
 
 
