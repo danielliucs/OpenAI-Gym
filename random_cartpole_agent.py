@@ -16,9 +16,8 @@ class RandomActionWrapper(gym.ActionWrapper):
     #Override parent's class method to tweak action to accept a random action   
     def action(self, action):
         if r.random() < self.epsilon:
-            print("Random!")
             return self.env.action_space.sample()
-        return action
+        return action 
 
 if __name__ == "__main__":
     env = RandomActionWrapper(gym.make("CartPole-v1"))
@@ -29,10 +28,11 @@ if __name__ == "__main__":
     total_reward = 0.0
 
     while True:
-        obs, reward, done, extra_info = env.step(0) #uses action of wrapper wehn calling step()
+        obs, reward, done, extra_info = env.step(0) #uses action of wrapper when calling step()
         total_reward += reward 
         if done:
             break
     
     print("Reward got: %.2f" %total_reward)
 
+#Higher randomness improves score on average!
