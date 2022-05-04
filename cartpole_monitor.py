@@ -1,5 +1,6 @@
 import gym
 
+#Run in no env
 
 if __name__ == "__main__":
     env = gym.make("CartPole-v1")
