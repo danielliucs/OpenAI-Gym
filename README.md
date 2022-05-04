@@ -5,4 +5,4 @@ This Repository includes basic example code files with detailed comments for my 
 
 
 CartPole Environement Problem.
-  Proposed Problem: How to balance a stick without it falling by moving to the left or right (add picture later)
+  Proposed Problem: How to balance a stick without it falling by moving to the left or right. Refer to Figure in Issues->Images
